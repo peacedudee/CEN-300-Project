@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prefabricated Vertical Drains calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <!-- <img src="./Logo.png" class="logo2323" /> -->
+    <div class="logo">Design of PVDs</div>
+    <a href="https://civil.iitr.ac.in/CE?Uid=smittfce" target="_blank" class="contact-us">Contact Us</a>
+  </header>
+  <div id="PVD-calculator" class="wrapper">
+    <img src="./pvd.jpg" class="pvd-image" />
+    <div class="calculator">
+      <div class="calc-con">
+        <div class="choose-value">
+          <div class="segmented-control"><input id="calc-value- Triangle" type="radio" name="value" value=" Triangle"
+              checked=""><label for="calc-value- Triangle"> Triangle</label></div>
+          <div class="segmented-control">
+            <input id="calc-value-Square" type="radio" name="value" value="Square"><label
+              for="calc-value-Square">Square</label>
+          </div>
+        </div>
+        <label for="calc-Cz" id="calc-Cz_value">cᵥ: 25 × 10‾⁸ m²/sec</label>
+        <input id="calc-Cz" type="range" value="0" min="0" max="100" step="0.1">
+        <label for="calc-Cr" id="calc-Cr_value">cᵣ: 180 × 10‾⁸ m²/sec</label>
+        <input id="calc-Cr" type="range" value="0" min="0" max="100" step="0.1">
+        <label for="calc-depth" id="calc-depth_value">Depth: 0 m</label>
+        <input id="calc-depth" type="range" value="0" min="0" max="50">
+        <label for="calc-mv" id="calc-mv_value">mᵥ: 0.0 × 10‾⁶ m²/N</label>
+        <input id="calc-mv" type="range" value="0" min="0" max="5" step='0.01'>
+        <label for="calc-Loading" id="calc-Loading_value">Average Loading: 0 Tonnes/m² </label>
+        <input id="calc-Loading" type="range" value="0" min="1" max="100">
+        <label for="calc-Settlement" id="calc-Settlement_value">Allowed settlement after commencement of Construction: 0 cm</label>
+        <input id="calc-Settlement" type="range" value="0" min="0.0" max="20" step="0.1">
+        <label for="calc-diameter" id="calc-diameter_value">Diameter of PVDs : 0 cm</label>
+        <input id="calc-diameter" type="range" value="0" min="0" max="200">
+        <label for="calc-Settlementt" id="calc-Settlementt_value">Time after which construction is to be started(in
+          days): 0 day</label>
+        <input id="calc-Settlementt" type="range" value="0" min="0" max="3000">
+        <label for="calc-Settlementtt" id="calc-Settlementtt_value">Area of Construction: 0 m²</label>
+        <input id="calc-Settlementtt" type="range" value="0" min="0" max="100000">
+
+        <!-- <label for="calc-Time after which construction is to be started(in days)" id="calc-days">Time after which construction is to be started(in days) : 1</label>
+    <input id="calc-days" type="range" value="180" min="80" max="250"> -->
+        <!-- <label for="calc-Area of Construction  (in m²)" id="calc-Area of Construction  (in m²)_value">Area of Construction  (in m²) : 1</label>
+    <input id="calc-Area of Construction  (in m²)" type="range" value="2" min="0" max="50"> -->
+      </div>
+      <div class="results">
+        <div id="calc-target-spacing">
+          <div>Spacing of PVD:</div>
+          <span>2 m</span>
+        </div>
+        <!-- <div id="calc-target-maintain">
+      Diameter of PVDs:<br>
+      <span>2400 </span>
+    </div> -->
+        <div id="calc-target-pvdpoints">
+          <div>Number of PVD points:</div>
+          <span>10 </span>
+        </div>
+        <div id="calc-target-length">
+          <div> Length of total PVDs required:</div>
+          <span>100 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
